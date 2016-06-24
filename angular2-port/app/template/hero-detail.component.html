@@ -1,0 +1,10 @@
+<div *ngIf="portfolio">
+  <h2><p>I, {{portfolio.model}}</p></h2>
+  <div>
+    <label>port: </label>{{portfolio.port_no}}</div>
+  <div>
+    <label>model: </label>
+    <input [(ngModel)]="portfolio.model" placeholder="name" />
+  </div>
+  <button (click)="goBack()">Back</button>  
+</div>

@@ -1,0 +1,9 @@
+<h3>My Portfolios</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let portfolio of portfolios" (click)="gotoDetail(portfolio)" class="col-1-4">
+    <div class="module hero">
+      {{portfolio.port_no}}
+      <h4>{{portfolio.model}}</h4>
+    </div>
+  </div>
+</div>
